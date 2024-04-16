@@ -1,0 +1,12 @@
+﻿<Window x:Class="DEPO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Главное окно" Height="350" Width="500"
+        Background="#FF2C3E50">
+
+    <Grid>
+        <TextBlock Text="Добро пожаловать!" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0" FontSize="24" Foreground="White"/>
+        <Button Content="Организации" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="60" Margin="0,100,0,50" FontSize="20" Background="#FF2980B9" Foreground="White" Click="OrganisationButton_Click"/>
+        <Button Content="Сотрудники" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="60" Margin="0,150,0,0" FontSize="20" Background="#FF2980B9" Foreground="White" Click="WorkerButton_Click"/>
+    </Grid>
+</Window>

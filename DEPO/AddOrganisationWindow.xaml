@@ -1,0 +1,26 @@
+﻿<Window x:Class="DEPO.AddOrganisationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить организацию" Height="250" Width="400" Background="#FF2C3E50">
+
+    <Grid Margin="10">
+
+        <Label Content="Имя:" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
+        <TextBox x:Name="txtName" VerticalAlignment="Top" Margin="132,11,0,0" Width="NaN"/>
+
+        <Label Content="ИНН:" VerticalAlignment="Top" Margin="0,30,0,0" FontSize="20" Foreground="White"/>
+        <TextBox x:Name="txtINN" VerticalAlignment="Top" Margin="131,39,-1,0" Width="NaN"/>
+
+        <Label Content="Юр.Адрес:" VerticalAlignment="Top" Margin="0,60,0,0" FontSize="20" Foreground="White"/>
+        <TextBox x:Name="txtLegalAddress" VerticalAlignment="Top" Margin="131,70,0,0" Width="NaN"/>
+
+        <Label Content="Факт.Адрес:" VerticalAlignment="Top" Margin="0,90,0,0" FontSize="20" Foreground="White"/>
+        <TextBox x:Name="txtActualAddress" VerticalAlignment="Center" Margin="131,0,0,0" Width="NaN"/>
+
+        <Button Content="Сохранить" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,14,12" FontSize="20" Foreground="White" Background="#FF2980B9" Click="SaveOrganization_Click"/>
+        <Button Content="Загрузить данные" Width="181" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,127,11" FontSize="20" Background="#FF2980B9" Foreground="White" Click="ImportFromExcel_Click"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="44" Height="36" Margin="5,171,0,0" FontSize="16" Background="#FF2980B9" Foreground="White" Click="BackButton_Click">
+            <TextBlock Text="&#xE112;" FontFamily="Segoe UI Symbol" FontSize="24"/>
+        </Button>
+    </Grid>
+</Window>
